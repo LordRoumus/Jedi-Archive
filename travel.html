@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Explore Adventures | Travel Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #3f51b5;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #3f51b5;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            padding: 15px 25px;
+            background-color: #ff6347;
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e53e3e;
+        }
+
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .destinations {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .destination {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            margin: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .destination:hover {
+            transform: scale(1.05);
+        }
+
+        .destination img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .destination h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #3f51b5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #ff6347;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Explore Adventures</h1>
+        <p>Your gateway to unforgettable journeys</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Discover Your Next Adventure</h2>
+        <p>Explore the world with tailored travel experiences that suit your wanderlust.</p>
+        <a href="#destinations" class="cta-button">Explore Destinations</a>
+    </section>
+
+    <section class="content" id="about">
+        <h2>Why Choose Us?</h2>
+        <p>We provide unique and unforgettable experiences that are tailored to your preferences. Whether it's a quiet retreat in the mountains or an adventurous safari in Africa, we have something for everyone.</p>
+    </section>
+
+    <section class="content" id="destinations">
+        <h2>Popular Destinations</h2>
+        <p>Explore some of the best places to visit and plan your next trip with us.</p>
+
+        <div class="destinations">
+            <div class="destination">
+                <img src="https://via.placeholder.com/280x180" alt="Destination 1">
+                <h3>Tokyo, Japan</h3>
+                <p>Experience the perfect blend of modern and traditional in Japan’s bustling capital.</p>
+            </div>
+
+            <div class="destination">
+                <img src="https://via.placeholder.com/280x180" alt="Destination 2">
+                <h3>Paris, France</h3>
+                <p>The city of love, art, and culture. Discover the magic of Parisian streets and landmarks.</p>
+            </div>
+
+            <div class="destination">
+                <img src="https://via.placeholder.com/280x180" alt="Destination 3">
+                <h3>Safari in Kenya</h3>
+                <p>Get up close to the wild wonders of Africa with an unforgettable safari experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2024 Explore Adventures | <a href="mailto:info@exploreadventures.com">Contact Us</a></p>
+    </footer>
+</body>
+
+</html>
+
+
